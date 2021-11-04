@@ -26,7 +26,7 @@ export function validateMaskPlaceholder(props) {
 
 export function validateChildren(props, inputElement) {
   const conflictProps = CONTROLLED_PROPS.filter(
-    propId =>
+    (propId) =>
       inputElement.props[propId] != null &&
       inputElement.props[propId] !== props[propId]
   );
