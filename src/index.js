@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, forwardRef } from "react";
-import { findDOMNode } from "react-dom";
 import PropTypes from "prop-types";
 
 import { useInputState, useInputElement, usePrevious } from "./hooks";
@@ -264,7 +263,7 @@ const InputMask = forwardRef((props, forwardedRef) => {
     onChange: isMasked && isEditable ? onChange : props.onChange,
     onMouseDown: isMasked && isEditable ? onMouseDown : props.onMouseDown,
     ref: (ref) => {
-      inputRef.current = findDOMNode(ref);
+      inputRef.current = ref;
 
       if (isFunction(forwardedRef)) {
         forwardedRef(ref);
