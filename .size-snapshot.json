@@ -20,23 +20,23 @@
     "gzipped": 3997
   },
   "react-input-mask.js": {
-    "bundled": 72026,
-    "minified": 23335,
-    "gzipped": 7878
+    "bundled": 71942,
+    "minified": 23274,
+    "gzipped": 7846
   },
   "react-input-mask.min.js": {
-    "bundled": 41102,
-    "minified": 14950,
-    "gzipped": 5333
+    "bundled": 41018,
+    "minified": 14889,
+    "gzipped": 5295
   },
   "react-input-mask.development.js": {
-    "bundled": 31176,
-    "minified": 13604,
-    "gzipped": 4363
+    "bundled": 31117,
+    "minified": 13552,
+    "gzipped": 4337
   },
   "react-input-mask.production.min.js": {
-    "bundled": 29408,
-    "minified": 12172,
-    "gzipped": 4015
+    "bundled": 29349,
+    "minified": 12120,
+    "gzipped": 3989
   }
 }

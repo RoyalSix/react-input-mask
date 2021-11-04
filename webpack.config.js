@@ -24,7 +24,7 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: [
-              ["@babel/preset-env", { targets: "Chrome > 70" }],
+              ["@babel/preset-env", { targets: "Chrome > 70", loose: true }],
               "@babel/preset-react",
             ],
           },

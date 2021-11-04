@@ -15,7 +15,9 @@ const isExternal = (id) =>
 
 const external = ["react", "react-dom"];
 const plugins = [
-  babel(),
+  babel({
+    babelHelpers: "bundled",
+  }),
   resolve(),
   commonjs(),
   protoToAssign(),
@@ -48,6 +50,7 @@ export default [
       format: "umd",
       name: "ReactInputMask",
       globals: { react: "React", "react-dom": "ReactDOM" },
+      exports: "auto",
     },
     external,
     plugins: [
@@ -66,6 +69,7 @@ export default [
       format: "umd",
       name: "ReactInputMask",
       globals: { react: "React", "react-dom": "ReactDOM" },
+      exports: "auto",
     },
     external,
     plugins: minifiedPlugins,
@@ -73,14 +77,22 @@ export default [
 
   {
     input,
-    output: { file: "lib/react-input-mask.development.js", format: "cjs" },
+    output: {
+      file: "lib/react-input-mask.development.js",
+      format: "cjs",
+      exports: "auto",
+    },
     external: isExternal,
     plugins,
   },
 
   {
     input,
-    output: { file: "lib/react-input-mask.production.min.js", format: "cjs" },
+    output: {
+      file: "lib/react-input-mask.production.min.js",
+      format: "cjs",
+      exports: "auto",
+    },
     external: isExternal,
     plugins: minifiedPlugins,
   },
