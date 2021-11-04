@@ -1,10 +1,8 @@
-# react-input-mask
+# react-input-mask-updated
 
-[![Build Status](https://img.shields.io/travis/sanniassin/react-input-mask/master.svg?style=flat)](https://travis-ci.org/sanniassin/react-input-mask) [![npm version](https://img.shields.io/npm/v/react-input-mask.svg?style=flat)](https://www.npmjs.com/package/react-input-mask) [![npm downloads](https://img.shields.io/npm/dm/react-input-mask.svg?style=flat)](https://www.npmjs.com/package/react-input-mask)
+Fork by Reflexions.
 
 Input masking component for React. Made with attention to UX.
-
-**This is a development branch for version 3.0. For the latest stable version [see v2 branch](https://github.com/sanniassin/react-input-mask/tree/v2).**
 
 #### [Demo](http://sanniassin.github.io/react-input-mask/demo.html)
 
@@ -15,14 +13,14 @@ Input masking component for React. Made with attention to UX.
 * [Known Issues](#known-issues)
 
 # Installation
-```npm install react-input-mask@next --save```
+```npm install react-input-mask-updated@next --save```
 
-react-input-mask requires **React 16.8.0 or later.** If you need support for older versions, use [version 2](https://github.com/sanniassin/react-input-mask/tree/v2).
+react-input-mask-updated requires **React 16.8.0 or later.** If you need support for older versions, use [version 2](https://github.com/sanniassin/react-input-mask/tree/v2).
 
 # Usage
 ```jsx
 import React from "react"
-import InputMask from "react-input-mask";
+import InputMask from "react-input-mask-updated";
 
 function DateInput(props) {
   return <InputMask mask="99/99/9999" onChange={props.onChange} value={props.value} />;
@@ -124,7 +122,7 @@ Please note that `beforeMaskedStateChange` executes more often than `onChange` a
 To use another component instead of regular `<input />` provide it as children. The following properties, if used, should always be defined on the `InputMask` component itself: `onChange`, `onMouseDown`, `onFocus`, `onBlur`, `value`, `disabled`, `readOnly`.
 ```jsx
 import React from 'react';
-import InputMask from 'react-input-mask';
+import InputMask from 'react-input-mask-updated';
 import MaterialInput from '@material-ui/core/Input';
 
 // Will work fine
