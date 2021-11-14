@@ -82,7 +82,7 @@
     "clean": "rimraf lib dist",
     "build": "cross-env BABEL_ENV=rollup rollup -c",
     "start": "cross-env BABEL_ENV=test NODE_ENV=development webpack-dev-server",
-    "prepare": "npm run lint && npm test && npm run clean && npm run build",
+    "prepublishOnly": "npm run lint && npm test && npm run clean && npm run build",
     "lint": "eslint ./src ./tests ./*.js",
     "lint-fix": "eslint --fix ./src ./tests ./*.js",
     "test": "npm run build && npm run test:input && npm run test:server-render && npm run test:build",
